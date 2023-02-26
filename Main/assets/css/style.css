@@ -1,5 +1,22 @@
+* {
+    box-sizing: border-box;
+}
 
-.fa {
+body {
+    font-family: monospace;
+    margin: 0;
+}
+
+.main-header{
+    display: flex;
+    flex-wrap:wrap;
+
+    background: lightgrey;
+    color: black;
+}
+
+
+/* .fa { */
     padding: 20px;
     font-size: 30px;
     width: 30px;
