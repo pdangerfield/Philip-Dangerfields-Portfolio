@@ -4,13 +4,15 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: monospace;
     position: relative;
    
 }
 
 header{
-   position: fixed;
+   position: relative;
    top: 0;
    width: 100%;
     background: lightgrey;
@@ -78,7 +80,6 @@ a{
   }
   @media(max-width: 800px){
     .nav-menu{
-        display:flex;
         flex-direction: column;
     }
   }
