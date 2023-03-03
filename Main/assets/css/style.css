@@ -2,13 +2,14 @@
 /* this sets the entire sheet to 0 margin and 0 padding */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 /* this sets the bodys font family, text color and background color*/
 body {
+  display: block;
     font-family: monospace;
     color: white;
     background-color: yellow;
@@ -21,7 +22,6 @@ header{
     display: flex;
     background: white;
     color: black;
-  /* height: 100px; */
   }
 
 header h1{
@@ -37,6 +37,7 @@ nav {
     /* float: right; */
     /* margin: 0 25%; */
     justify-content: right;
+    height: 5%;
     
 }
   
@@ -56,6 +57,7 @@ nav a{
   main {
     display: flex;
     flex-wrap: wrap;
+    height: 75vh;
   }
 
   aside {
@@ -67,17 +69,26 @@ nav a{
 
   .workprojects {
     flex: 4;
-    background-color: #fff;
+    background-color: #d51717;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 
+  .card1{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: black;
+    padding: 10px;
+    flex: 10 20 700px;
+  }
   .card {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    border-color: black;
     padding: 10px;
     flex: 0 0 400px;
   }
@@ -91,7 +102,18 @@ nav a{
     color: black;
   }
 
- @media screen and (max-width:446px) {
+  footer {
+    display:flex;
+    background-color: blue;
+    justify-content: space-between;
+    
+  }
+  footer p {
+    display: flex;
+    justify-content: space-between;
+  }
+
+ @media screen and (max-width:892px) {
     main, nav{
         flex-direction: column;
         align-items: center;
