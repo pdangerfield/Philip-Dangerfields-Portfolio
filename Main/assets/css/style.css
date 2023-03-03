@@ -53,9 +53,46 @@ nav a{
     background-color: #ddd;
     color: black;
   }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: center;
+  }
+
+  .workprojects {
+    flex: 4;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+  }
   
+  .card header {
+    padding: 20px;
+  }
+  
+  .card p {
+    text-align: center;
+    color: black;
+  }
+
  @media screen and (max-width:446px) {
-    nav{
+    main, nav{
         flex-direction: column;
         align-items: center;
         
