@@ -37,7 +37,6 @@ nav {
     /* float: right; */
     /* margin: 0 25%; */
     justify-content: right;
-    height: 5%;
     
 }
   
@@ -57,7 +56,6 @@ nav a{
   main {
     display: flex;
     flex-wrap: wrap;
-    height: 75vh;
   }
 
   aside {
@@ -82,7 +80,7 @@ nav a{
     border-radius: 10px;
     border-color: black;
     padding: 10px;
-    flex: 10 20 700px;
+    flex: 25 20 700px;
   }
   .card {
     border-style: solid;
@@ -104,17 +102,32 @@ nav a{
 
   footer {
     display:flex;
-    background-color: blue;
+    background-color: white;
     justify-content: space-between;
-    
-  }
+       }
+
+  footer h2{
+    color: #060505;
+    padding: 40px 10px 30px 20px;
+  }     
   footer p {
-    display: flex;
-    justify-content: space-between;
+    color: #060505;
+    padding: 40px 30px 30px 20px;
+    text-decoration: none;    
+    font-size: 17px;
+  }
+  footer p a {
+    text-decoration: none;
+  }
+
+  footer p:hover {
+    background-color: #ddd;
+    color: black;
+    text;
   }
 
  @media screen and (max-width:892px) {
-    main, nav{
+    main, nav, footer{
         flex-direction: column;
         align-items: center;
         
