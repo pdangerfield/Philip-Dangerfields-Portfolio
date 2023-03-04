@@ -8,11 +8,11 @@
 }
 
 /* this sets the bodys font family, text color and background color*/
-body {
+ body {
   display: block;
     font-family: monospace;
     color: white;
-    background-color: yellow;
+    height: 100%;
    
 }
 
@@ -22,6 +22,7 @@ header{
     display: flex;
     background: white;
     color: black;
+    height: 10%;
   }
 
 header h1{
@@ -56,6 +57,7 @@ nav a{
   main {
     display: flex;
     flex-wrap: wrap;
+    height: 75vh;
   }
 
   aside {
