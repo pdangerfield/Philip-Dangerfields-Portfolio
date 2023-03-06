@@ -2,39 +2,28 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+padding: 0;
+margin: 0;
 }
 
 /* this sets the bodys font family, text color and background color*/
 body {
-  display: block;
   font-family: monospace;
   color: white;
-  height: 100%;
 }
 
 /* this sets the headers background and text color */
 
 header {
-  display: flex;
+  text-align: left;
   background: rgb(123, 215, 166);
   color: rgba(40, 45, 42, 0.658);
-  height: 10vh;
-}
-
-header h1 {
-  font-size: 30px;
-  text-align: center;
-  padding: 40px 10px 30px 20px;
 }
 
 
 nav {
   display: flex;
   background-color: rgb(123, 215, 166);
-  /* float: right; */
-  /* margin: 0 25%; */
   justify-content: right;
 
 }
@@ -56,27 +45,25 @@ nav a:hover {
 main {
   display: flex;
   flex-direction: column;
-  height: auto;
   align-items: center;
 }
 
 aside {
-  width: 100%;
   background-color: rgb(123, 215, 166);
+  color: black;
   text-align: center;
 } 
 
 
-
 .card1 {
+  display: flex;
+  flex: 1;
   border-style: solid;
   position: relative;
   flex-direction: column;
-  border-width: 1px;
+  border-width: 5px;
   border-radius: 10px;
   border-color: black;
-  min-height: fit-content;
-  min-width: fit-content;
   padding: 10px;
   margin: 2px;
 }
@@ -90,10 +77,9 @@ aside {
   color: rgba(45, 236, 15, 0.899);
 }
 
-.card1 img{
-  background-clip: content-box;
-  object-fit: contain;
-  }
+.card1 img{background-clip: content-box;
+  width: 100%;
+}
 
 
 
@@ -123,7 +109,6 @@ aside {
 .card img{
   background-clip: content-box;
   object-fit: contain;
-  width: 100%;
 }
 
 footer {
