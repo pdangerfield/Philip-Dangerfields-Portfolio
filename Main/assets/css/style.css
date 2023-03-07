@@ -4,26 +4,25 @@
   box-sizing: border-box;
 padding: 0;
 margin: 0;
+background-color: rgb(79, 184, 184);
 }
 
 /* this sets the bodys font family, text color and background color*/
 body {
   font-family: monospace;
-  color: white;
+  color: rgb(123, 215, 166);
 }
 
 /* this sets the headers background and text color */
 
 header {
   text-align: left;
-  background: rgb(123, 215, 166);
   color: rgba(40, 45, 42, 0.658);
 }
 
 
 nav {
   display: flex;
-  background-color: rgb(123, 215, 166);
   justify-content: right;
 
 }
@@ -38,7 +37,6 @@ nav a {
 
 /* Change the color of links on hover */
 nav a:hover {
-  background-color: #ddd;
   color: black;
 }
 
@@ -48,71 +46,47 @@ main {
 }
 
 aside {
-  background-color: rgb(123, 215, 166);
+  flex: 1;
+  padding: 15px;
   color: black;
   text-align: center;
 } 
 
 
-.card1 {
-  display: flex;
-  flex: 1;
-  border-style: solid;
-  position: relative;
-  flex-direction: column;
+.projects{
+  flex: 4;
   border-width: 5px;
   border-radius: 10px;
-  border-color: black;
-  padding: 10px;
-  margin: 2px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.bottom-left{
-  position:absolute;
-  bottom:8px;
-  right: 16px;
-  z-index: 1;
-  font-size: 35px;
-  color: rgba(45, 236, 15, 0.899);
-}
-
-.card1 img{background-clip: content-box;
-  width: 100%;
-}
-
 
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  flex-direction: column;
-  border-style: solid;
+   /* border-style: solid; */
   border-width: 1px;
   border-radius: 10px;
-  border-color: black;
-  min-height: 200px;
-  padding: 10px;
-  margin: 2px;
+ padding: 10px;
+ flex: 0 0 400px;
 }
 
 .card header {
   padding: 20px;
 }
 
-.card p {
-  text-align: center;
-  color: black;
-}
 
 .card img{
-  background-clip: content-box;
-  object-fit: contain;
+ width: 100%;
+}
+
+.zoom:hover{
+ transform: scale(1.5);
 }
 
 footer {
   display: flex;
-  background-color: rgb(123, 215, 166);
   justify-content: space-between;
 }
 
@@ -132,11 +106,7 @@ footer p a {
   text-decoration: none;
 }
 
-footer p:hover {
-  background-color: #ddd;
-  color: black;
 
-}
 
 @media screen and (max-width:892px) {
 
