@@ -1,4 +1,4 @@
-/* this sets the entire sheet to 0 margin and 0 padding */
+/* this sets the entire sheet to 0 margin and 0 padding  and background color*/
 
 * {
   box-sizing: border-box;
@@ -13,14 +13,14 @@ body {
   color: rgb(123, 215, 166);
 }
 
-/* this sets the headers background and text color */
+/* this sets the headers text color and alignment */
 
 header {
   text-align: left;
   color: rgba(40, 45, 42, 0.658);
 }
 
-
+/* tells the nav that it is a flex box and to put the content on the right side of the screen */
 nav {
   display: flex;
   justify-content: right;
@@ -40,11 +40,13 @@ nav a:hover {
   color: black;
 }
 
+/* main section to flex and gives permission to wrap */
 main {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* this is for the about me so that it can sit on the page side and then stack at the media a screen query */
 aside {
   flex: 1;
   padding: 15px;
@@ -52,7 +54,7 @@ aside {
   text-align: center;
 } 
 
-
+/* this is for the work section where the work is previewed and that it is a flex box for the cards inside */
 .projects{
   flex: 4;
   border-width: 5px;
@@ -63,7 +65,7 @@ aside {
   justify-content: center;
 }
 
-
+/* sets the size of the cards with the flex shorthand */
 .card {
    /* border-style: solid; */
   border-width: 1px;
@@ -81,15 +83,17 @@ aside {
  width: 100%;
 }
 
+/* the first card with class zoom will scale up 150% when hovered over */
 .zoom:hover{
  transform: scale(1.5);
 }
 
+/* footer is a flex box and content will space the extra space evenly between itselves */
 footer {
   display: flex;
   justify-content: space-between;
 }
-
+/* text color and spacing for the footer header */
 footer h2 {
   color: #060505;
   padding: 40px 10px 30px 20px;
@@ -107,7 +111,7 @@ footer p a {
 }
 
 
-
+/* for media screens or smaller screen sizes it will turn them to flex columns and all stack on top of each other while placing the items in the center */
 @media screen and (max-width:892px) {
 
   nav, main, 
