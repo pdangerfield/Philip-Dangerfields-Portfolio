@@ -84,9 +84,9 @@ aside {
 }
 
 /* the first card with class zoom will scale up 150% when hovered over */
-.zoom:hover{
+/* .zoom:hover{
  transform: scale(1.5);
-}
+} */
 
 /* footer is a flex box and content will space the extra space evenly between itselves */
 footer {
