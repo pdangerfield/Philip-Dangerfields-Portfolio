@@ -1,10 +1,9 @@
 /* this sets the entire sheet to 0 margin and 0 padding  and background color*/
-
 * {
   box-sizing: border-box;
-padding: 0;
-margin: 0;
-background-color: rgba(70, 167, 92, 0.678);
+  padding: 0;
+  margin: 0;
+  background-color: rgba(70, 167, 92, 0.678);
 }
 
 /* this sets the bodys font family, text color and background color*/
@@ -14,7 +13,6 @@ body {
 }
 
 /* this sets the headers text color and alignment */
-
 header {
   text-align: left;
   color: rgba(40, 45, 42, 0.658);
@@ -24,7 +22,6 @@ header {
 nav {
   display: flex;
   justify-content: right;
-
 }
 
 /* Style the links inside the navigation bar */
@@ -55,11 +52,7 @@ aside {
 } 
 
 /* this is for the work section where the work is previewed and that it is a flex box for the cards inside */
-.projects{
-  flex: 4;
-  border-width: 5px;
-  border-radius: 10px;
-  padding: 20px;
+.projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -67,25 +60,28 @@ aside {
 
 /* sets the size of the cards with the flex shorthand */
 .card {
-   /* border-style: solid; */
   border-width: 1px;
   border-radius: 10px;
- padding: 10px;
- flex: 0 0 400px;
+  padding: 10px;
+  flex: 1 0 50%; /* Full width for the first card */
+}
+
+.card:not(:first-child) {
+  flex-basis: calc(50% - 20px); /* Half width for the remaining cards with margin */
+  margin: 10px; /* Add margin for spacing between cards */
 }
 
 .card header {
   padding: 20px;
 }
 
-
-.card img{
- width: 100%;
+.card img {
+  width: 100%;
 }
 
 /* the first card with class zoom will scale up 150% when hovered over */
 /* .zoom:hover{
- transform: scale(1.5);
+  transform: scale(1.5);
 } */
 
 /* footer is a flex box and content will space the extra space evenly between itselves */
@@ -93,6 +89,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
 /* text color and spacing for the footer header */
 footer h2 {
   color: #060505;
@@ -110,15 +107,12 @@ footer p a {
   text-decoration: none;
 }
 
-
 /* for media screens or smaller screen sizes it will turn them to flex columns and all stack on top of each other while placing the items in the center */
-@media screen and (max-width:892px) {
-
-  nav, main, 
+@media screen and (max-width: 892px) {
+  nav,
+  main,
   footer {
     flex-direction: column;
     align-items: center;
-
   }
-
 }
